@@ -1,0 +1,57 @@
+.main-page {
+    text-align: center;
+    background-color: black;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap: 25px;
+    font-family: 'Helvetica'
+}
+
+.header {
+    font-family: 'Bebas Neue';
+    font-size: calc(10px + 7vmin);
+    color: red;
+    text-shadow: 1px 1px 10px black;
+}
+
+.subheader {
+    font-size: calc(10px + 3vmin);
+    color: white;
+    text-shadow: 1px 1px 10px black;
+    padding-bottom: 10px;
+}
+
+.groupnames {
+    font-size: calc(10px + 1vmin);
+    color: lightgrey;
+    text-shadow: 1px 1px 10px black;
+    
+}
+
+.left {
+    align-self: start;
+}
+
+.right {
+    align-self: end;
+}
+
+.button {
+    font-family: 'Bebas Neue';
+    background-color: rgb(128, 128, 128, 0.5);
+    color: white;
+    font-size: calc(10px + 1vmin);
+    border-radius: 4px;
+    border: 0px;
+    padding: 20px;
+    transition-duration: 0.4s;
+}
+
+.button:hover {
+    background-color: white;
+    color: black;
+}

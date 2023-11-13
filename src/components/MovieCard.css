@@ -1,0 +1,35 @@
+.container {
+    background-color: rgb(128, 128, 128, 0.5);
+    padding: 20px;
+    border-radius: 4px;
+    width: 25vw;
+    display: flex;
+    gap: 2vw;
+}
+
+.title {
+    font-family: 'Bebas Neue';
+    font-size: calc(10px + 1vmin);
+}
+
+.description {
+    font-size: calc(5px + 1vmin);
+}
+
+.leftInnerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: start;
+    width: 45%;
+}
+
+.posterContainer {
+    align-items: center;
+    align-self: center;
+    width: 45%;
+}
+
+.poster {
+    width: 100%;
+}
