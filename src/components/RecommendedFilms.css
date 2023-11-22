@@ -1,0 +1,10 @@
+.recommendedPoster {
+    width: 10vw;
+}
+
+.recommendedContainer {
+    display: flex;
+    flex-flow: wrap;
+    width: 46vw;
+    gap: 2vw;
+}

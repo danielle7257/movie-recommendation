@@ -1,3 +1,21 @@
+.input-container {
+    display: flex;
+    gap: 25px;
+}
+
+.input {
+    font-size: calc(10px + 2vmin);
+    padding: 10px;
+}
+
+.recommendations-container {
+
+}
+
+.subheader {
+    font-family: 'Bebas Neue';
+}
+
 .main-page {
     text-align: center;
     background-color: black;
