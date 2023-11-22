@@ -22,12 +22,15 @@ function Demo() {
     }
 
     const handleInput = () => {
-        setMovieTitle(document.getElementById("titleEntry").textContent)
+        setMovieTitle(document.getElementById("titleEntry").value);
     }
 
     const handleEnter = () => {
         // clear content
         setFilms([]);
+
+        console.log("Debug 1:");
+        console.log(movieTitle);
 
         fetch('/recommend', {
             method: 'POST',
@@ -40,9 +43,17 @@ function Demo() {
             .then((json) => {
                 const baseUrl = "https://image.tmdb.org/t/p/original";
                 json.forEach((item) => {
-                    movie.url = baseUrl.concat(item['poster_path']);
-                    movie.title = item['title'];
-                    setFilms(films.push(movie));
+                    const movie = {
+                        title: item['title'],
+                        url: baseUrl.concat(item['poster_path'])
+                    };
+                    console.log("DEBUG 2:::::::: ");
+                    console.log(movie);
+                    setFilms((prevFilms) => [
+                        ...prevFilms,
+                        movie
+                    ]);
+                    console.log(films);
                 })
             })
             .catch(error => {
@@ -55,6 +66,7 @@ function Demo() {
             document.getElementById("subheader0").textContent = "";
         }
         else {
+            console.log(films);
             document.getElementById("subheader0").textContent = "Recommendations";
         }
     }
@@ -70,7 +82,7 @@ function Demo() {
                     Enter
                 </button>
             </div>
-            <MovieCard name={movieTitle} imgUrl={imageUrl} />
+            {/* <MovieCard name={movieTitle} imgUrl={imageUrl} /> */}
             <header id="subheader0" className="subheader">
                 
             </header>
