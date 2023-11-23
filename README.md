@@ -1,3 +1,12 @@
+# We used data from the MovieLens Dataset https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset
+The csvs were too large to upload to GitHub.  
+We used:
+Credits.csv
+Keywords.csv
+links_small.csv
+Movies_metadata.csv
+Ratings_small.csv
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
