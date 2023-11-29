@@ -1,79 +1,61 @@
-# We used data from the MovieLens Dataset https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset
-The csvs were too large to upload to GitHub.  
-We used:
-Credits.csv
-Keywords.csv
-links_small.csv
-Movies_metadata.csv
-Ratings_small.csv
+# Introduction: 
+The recommendation systems are an important problem to solve. For any major e-commerce platform, the major share of their revenue is generated from the recommendation systems. Netflix, YouTube, Amazon Prime, and many major streaming services improve their recommendation systems to generate revenue. 
 
-# Getting Started with Create React App
+This project movie recommendation systems is an attempt to solve the challenge. We have used a hybrid approach in solving this challenge. We have used both content-based filtering and collaborative filtering approaches to solve the recommendation systems. 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# How to run the project: 
 
-## Available Scripts
+1. Clone the project repo to your local folder. 
 
-In the project directory, you can run:
+2. Download the below dataset files from the below link.
 
-### `npm start`
+   ## Link: https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset
+  
+   ### Files to download:
+   credits.csv, 
+   keywords.csv, 
+   links_small.csv, 
+   movies_metadata.csv, 
+   ratings_small.csv.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+3. Place the above dataset files in the backend folder of your project repo. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+4. Open a terminal inside the backend folder and try to Install the below python libraries. 
 
-### `npm test`
+   ## Libraries: 
+   Use the below commands to install the libraries. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   ```bash
+   pip install Flask tmdbv3api requests pandas numpy matplotlib seaborn scipy nltk scikit-learn surprise fuzzywuzzy
+   ```
 
-### `npm run build`
+5. In the main folder, open a terminal and run the below command to install the npm modules. 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```bash
+   npm install
+   ```
+   If you do not have the npm installed before, you can refer to the below link and configure it to your system.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ## Link: https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+6. Once all the libraries are installed, open a terminal in the main project repo and run the below command to start the react server. 
 
-### `npm run eject`
+   ```bash
+   npm start
+   ```
+   Runs the app in the development mode.
+   Open http://localhost:3000 to view it in your browser.
+  
+   The page will reload when you make changes.
+   You may also see any lint errors in the console.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+7. Now open another terminal inside the backend folder and run the main.py file using the below command.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```bash
+   python main.py
+	 ```
+   This command will start the backend Flask server. It will take some time to run the application. You can open a browser and check the link http://127.0.0.1:5000
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+8. You can watch the demo at
+   
+   [![Watch the video](https://img.youtube.com/vi/3AXcZaP2aoo/hqdefault.jpg)](https://youtu.be/3AXcZaP2aoo)
